@@ -9,3 +9,9 @@ variable "inst_key" {
   description = "Key .pem for access"
   default     = "deividdua"
 }
+
+variable "arn_aws_iam_policy" {
+  type        = string
+  description = "arn da policy"
+  default     = "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM"  
+}

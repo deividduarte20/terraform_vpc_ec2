@@ -4,6 +4,6 @@ data "aws_ami" "teste" {
   name_regex  = "amazon"
 }
 
-data "aws_iam_role" "roles" {
-  name = "AmazonSSMRoleForInstancesQuickSetup"
+data "aws_iam_policy" "ec2policy" {
+  arn = var.arn_aws_iam_policy
 }
